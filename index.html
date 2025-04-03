@@ -1,1 +1,252 @@
 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment Solution for Module 2</title>
+        <meta name="description" content='It is an assignment for module 2 of "HTML, CSS, and Javascript for Web Developers" course '>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+                font-size: 15px;
+            }
+            #header {
+                color: black;
+                font-size: 1.75em;
+                width:100%;
+                text-align: center;
+                font-weight: bold;
+                margin: 40px;
+            }
+            section>div{
+                float:right;
+                width:95%;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+                height: 150PX;
+            }
+            section>div>div{
+                text-align: center;
+                font-size: 1.25em;
+                width: 10em;
+                font-weight: bold;
+                float:right;
+                border-color: black;
+                border-width: 1px;
+                border-style: solid;
+            }
+            section>div>p{
+                clear: right;
+                width:90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #chicken{background-color: beige;}
+            #beef{color:white; background-color:darkred}
+            #sushi{background-color:aqua}
+            
+            @media(min-width:992px){
+                .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+                    float: left;
+                } 
+                .col-lg-1{
+                    width:8.33%;
+                }
+                .col-lg-2{
+                    width:16.66%;
+                }
+                .col-lg-3{
+                    width:25%
+                }
+                .col-lg-4{
+                    width:33%;
+                }
+                .col-lg-5{
+                    width:41.66%;
+                }
+                .col-lg-6{
+                    width:50%;
+                }
+                .col-lg-7{
+                    width:58.33%;
+                }
+                .col-lg-8{
+                    width:66.66%;
+                }
+                .col-lg-9{
+                    width:74.99%;
+                }
+                .col-lg-10{
+                    width:83.33%;
+                }
+                .col-lg-11{
+                    width:91.66%
+                }
+                .col-lg-12{
+                    width:100%
+                }
+            }
+            @media(min-width:768px) and (max-width:991px){
+                .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+                    float: left;
+                } 
+                .col-md-1{
+                    width:8.33%;
+                }
+                .col-md-2{
+                    width:16.66%;
+                }
+                .col-md-3{
+                    width:25%
+                }
+                .col-md-4{
+                    width:33%;
+                }
+                .col-md-5{
+                    width:41.66%;
+                }
+                .col-md-6{
+                    width:50%;
+                }
+                .col-md-7{
+                    width:58.33%;
+                }
+                .col-md-8{
+                    width:66.66%;
+                }
+                .col-md-9{
+                    width:74.99%;
+                }
+                .col-md-10{
+                    width:83.33%;
+                }
+                .col-md-11{
+                    width:91.66%
+                }
+                .col-md-12{
+                    width:100%
+                }
+            }
+            @media(min-width:768px) and (max-width:991px){
+                .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+                    float: left;
+                }
+                #section3>div{width:98%;} 
+                .col-md-1{
+                    width:8.33%;
+                }
+                .col-md-2{
+                    width:16.66%;
+                }
+                .col-md-3{
+                    width:25%
+                }
+                .col-md-4{
+                    width:33%;
+                }
+                .col-md-5{
+                    width:41.66%;
+                }
+                .col-md-6{
+                    width:50%;
+                }
+                .col-md-7{
+                    width:58.33%;
+                }
+                .col-md-8{
+                    width:66.66%;
+                }
+                .col-md-9{
+                    width:74.99%;
+                }
+                .col-md-10{
+                    width:83.33%;
+                }
+                .col-md-11{
+                    width:91.66%
+                }
+                .col-md-12{
+                    width:100%
+                }
+            }
+        
+        @media(max-width:767px){
+            .col-sl-1, .col-sl-2, .col-sl-3, .col-sl-4, .col-sl-5, .col-sl-6, .col-sl-7, .col-sl-8, .col-sl-9, .col-sl-10, .col-sl-11, .col-sl-12{
+                float: left;
+            } 
+            .col-sl-1{
+                width:8.33%;
+            }
+            .col-sl-2{
+                width:16.66%;
+            }
+            .col-sl-3{
+                width:25%
+            }
+            .col-sl-4{
+                width:33%;
+            }
+            .col-sl-5{
+                width:41.66%;
+            }
+            .col-sl-6{
+                width:50%;
+            }
+            .col-sl-7{
+                width:58.33%;
+            }
+            .col-sl-8{
+                width:66.66%;
+            }
+            .col-sl-9{
+                width:74.99%;
+            }
+            .col-sl-10{
+                width:83.33%;
+            }
+            .col-sl-11{
+                width:91.66%
+            }
+            .col-sl-12{
+                width:100%
+            }
+        }
+        section{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="header">Our Menu</div>
+        <section id="section1" class="col-sl-12 col-md-6 col-lg-4">
+            <div>
+                <div id="chicken">Chicken</div>
+                <p id="chicken-ingridients">Chicken Breast, Olive Oil, Garlic, Rosemary, Thyme, Lemon, Salt, Pepper.
+                    Served with Garlic Mashed Potatoes (made with Potatoes, Butter, Cream, Garlic, Salt, Pepper) and Steamed Vegetables (assorted Carrots, Broccoli, Cauliflower).
+                </p>
+            </div>
+        </section>
+        <section id="section2" class="col-sl-12 col-md-6 col-lg-4">
+            <div>
+                <div id = "beef">Beef</div>
+                <p id="beef-ingridients">10oz Ribeye Steak, Olive Oil, Garlic, Rosemary, Salt, Pepper, Béarnaise Sauce (made with Egg Yolks, Butter, Tarragon, Vinegar, Shallots, Lemon Juice).
+                    Served with a Baked Potato (with Butter, Sour Cream, Chives, Cheddar Cheese).
+                </p>
+            </div>
+        </section>
+        <section id="section3" class="col-sl-12 col-md-12 col-lg-4" >
+            <div>
+                <div id="sushi">Sushi</div>
+                <p id = "sushi-ingridients">Tuna, Salmon, Avocado, Cucumber, Nori (seaweed), Sushi Rice, Soy Sauce, Wasabi, Pickled Ginger.
+
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
